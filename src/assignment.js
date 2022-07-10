@@ -14,9 +14,13 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  sum = 0
+  for (let number = 0; number < arrayOfNumbers.length; number++) {
+    sum+=arrayOfNumbers[number]
+  }
+  return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,13 +31,20 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
-}
+// function countEvenNumbers(arrayOfNumbers) {
+//   count = 0
+//   for (let number = 0; number < arrayOfNumbers.length; number++) {
+//     if (number % 2 == 0) {
+//       count++
+//     }
+//   }
+//     return `There are ${count} even numbers`;
+// }
 // assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
+// Multiply celcius temp by 9/5 then add 32
  * 
  * Given an array of numbers representing temperatures in Celsius,
  * convert each number to Fahrenheit and return a new array containing the converted
@@ -47,9 +58,14 @@ function countEvenNumbers(arrayOfNumbers) {
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+  newArrayOfNumbers = []
+  for (number of arrayOfNumbers) {
+    tempFahrenheit = Math.trunc((number * (9 / 5)) + 32)
+    newArrayOfNumbers.push(tempFahrenheit)
+  }
+    return newArrayOfNumbers;
 }
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
 // ========================
